@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welldone Coaching Classes</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="student resourse.css">
+</head>
+    <script src="index.js"></script>
+<body>
+    <header>
+        <div class="logo"> <img src="image/logo.png" alt="Coaching Class Logo"> </div>
+        <button class="menu-toggle">☰</button>
+        <nav class="home-nav">
+            <ul class="home-ul">
+                <li><a href="index.html" class="home-a">Home</a></li>
+                <li class="home-li"><a href="about.html" class="home-a">About Us</a></li>
+                <li class="home-li"><a href="course.html" class="home-a">Courses</a></li>
+                <li class="home-li"><a href="testimonial.html" class="home-a">Testimonials </a></li>
+                <li class="home-li"><a href="contact.html" class="home-a">Contact Us</a></li>
+                <li class="home-li"><a href="#more" class="home-a">More ▼</a>
+                    <ul class="dropdown">
+                        <li class="home-li"><a href="admission.html" class="home-a">Admissions</a></li>
+                        <li class="home-li"><a href="student resourses.html" class="home-a">Student Resources</a></li>
+                        <li class="home-li"><a href="blogs.html" class="home-a">Blog/News</a></li>
+                        <li class="home-li"><a href="event.html" class="home-a">Events</a></li>
+                        <li class="home-li"><a href="gallery.html" class="home-a">Gallery</a></li>
+                        <li class="home-li"><a href="FAQ.html" class="home-a">FAQ</a></li>
+                        <li class="home-li"><a href="privacy.html" class="home-a">Privacy Policy & Terms</a></li>
+                    </ul>
+                </li>
+                <li class="home-li"><a href="login.html" class="home-a">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="student-container">
+        <h2 class="student-h2">Student Resources</h2>
+        <div class="resources">
+            <div class="resource-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/3081/3081648.png" alt="Study Materials">
+                <h3 class="student-h3">Study Materials</h3>
+                <p class="student-p">Access notes, e-books, and recorded lectures</p>
+                <button onclick="showInfo('Study Materials')">Explore</button>
+            </div>
+            <div class="resource-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/679/679744.png" alt="Online Classes">
+                <h3 class="student-h3">Online Classes</h3>
+                <p class="student-p">Join live or recorded online <br> sessions    </p>
+                <button onclick="showInfo('Online Classes')">Join Now</button>
+            </div>
+            <div class="resource-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/2972/2972012.png" alt="Timetable">
+                <h3 class="student-h3">Timetable</h3>
+                <p class="student-p">Check updated class and exam schedules</p>
+                <button onclick="showInfo('Timetable')">View Schedule</button>
+            </div>
+        </div>
+        <!-- Login Section -->
+        <div class="login-box">
+            <h3 class=""student-h3">Student Login</h3>
+            <input type="text" id="username" placeholder="Enter UserName">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo-container">
+                <img src="image/logo.png" alt="Company Logo" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <div class="footer-h2">Quick Links</div>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="index.html" class="footer-a">Home</a></li>
+                    <li class="footer-li"><a href="about.html" class="footer-a">About Us</a></li>
+                    <li class="footer-li"><a href="course.html" class="footer-a">Courses</a></li>
+                    <li class="footer-li"><a href="contact.html" class="footer-a">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <div class="footer-h2">Resources</div>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="blogs.html" class="footer-a">Blog</a></li>
+                    <li class="footer-li"><a href="faq.html" class="footer-a">FAQs</a></li>
+                    <li class="footer-li"><a href="privacy.html" class="footer-a">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <div class="footer-h2">Contact Us</div>
+                <p class="footer-p">Email: info@example.com</p>
+                <p class="footer-p">Phone: +123 456 7890</p>
+                <p class="footer-p">Address: 123 Street, City</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-h2">Follow Us</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-a"><img src="image/Facebook_f_logo.svg" alt="Facebook" class="footer-img"></a>
+                    <a href="#" class="footer-a"><img src="image/LinkedIn_logo_initials.png" alt="Twitter" class="footer-img"></a>
+                    <a href="#" class="footer-a"><img src="image/Instagram_icon.png" alt="Instagram" class="footer-img"></a>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            &copy; 2025 Your Company. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Page</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+    .course-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .course-title {
+      text-align: center;
+      color: #333;
+      grid-column: span 2;
+    }
+    .subject {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .section {
+      font-size: 14px;
+      text-align: center;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .section h2 {
+      font-size: 18px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .section h2 i {
+      margin-right: 10px;
+      font-size: 20px;
+      color: #28a745;
+    }
+    .enroll-btn {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      grid-column: span 2;
+      text-transform: uppercase;
+    }
+    .enroll-btn:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="course-image">
+      
+    </div>
+
+    <h1 class="course-title"><img src="ssc.jpg" alt="Course Image"></h1>
+
+    <div class="section">
+      <h2><i class="fas fa-info-circle"></i>Class Overview</h2>
+      <p>Crack the UGC SSC exam with expert guidance and structured learning. Get personalized mentorship, comprehensive study materials, and proven strategies to boost your success. Enroll today and achieve your academic goals!</p>
+    </div>
+
+    
+    <div class="section">
+      <h2><i class="fas fa-book-open"></i>Subjects Covered</h2>
+      <ul class="subject">
+        <li>Mathematics</li>
+        <li>Basic Computer</li>
+        <li>English</li>
+        <li>General Knowledge</li>
+        <li>Aptitude</li>
+        <li>Reasoning</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-clock"></i>Batch Timings</h2>
+      <p>Morning and Evening Batches Available | Weekdays & Weekends</p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-dollar-sign"></i>Fees</h2>
+      <p>Starting at 15000 Rupees | Installment Options Available</p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-pen"></i>Enrollment Process</h2>
+      <p>Register online or visit our center to enroll.</p>
+    </div>
+
+    
+    <a href="#" class="enroll-btn">Join Now</a>
+  </div>
+</body>
+</html>

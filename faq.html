@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welldone Coaching Classes</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="faq.css">
+</head>
+    <script src="index.js"></script>
+<body>
+    <header>
+        <div class="logo"> <img src="image/logo.png" alt="Coaching Class Logo"> </div>
+        <button class="menu-toggle">☰</button>
+        <nav class="home-nav">
+            <ul class="home-ul">
+                <li><a href="index.html" class="home-a">Home</a></li>
+                <li class="home-li"><a href="about.html" class="home-a">About Us</a></li>
+                <li class="home-li"><a href="course.html" class="home-a">Courses</a></li>
+                <li class="home-li"><a href="testimonial.html" class="home-a">Testimonials </a></li>
+                <li class="home-li"><a href="contact.html" class="home-a">Contact Us</a></li>
+                <li class="home-li"><a href="#more" class="home-a">More ▼</a>
+                    <ul class="dropdown">
+                        <li class="home-li"><a href="admission.html" class="home-a">Admissions</a></li>
+                        <li class="home-li"><a href="student resourses.html" class="home-a">Student Resources</a></li>
+                        <li class="home-li"><a href="blogs.html" class="home-a">Blog/News</a></li>
+                        <li class="home-li"><a href="event.html" class="home-a">Events</a></li>
+                        <li class="home-li"><a href="gallery.html" class="home-a">Gallery</a></li>
+                        <li class="home-li"><a href="FAQ.html" class="home-a">FAQ</a></li>
+                        <li class="home-li"><a href="privacy.html" class="home-a">Privacy Policy & Terms</a></li>
+                    </ul>
+                </li>
+                <li class="home-li"><a href="login.html" class="home-a">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="faq-container">
+        <div class="faq-h2">Frequently Asked Questions</div>
+        
+        <div class="faq-item" onclick="toggleAnswer(0)">
+            <p>What coaching programs do you offer?</p> <span>+</span>
+        </div>
+        <div class="faq-answer">We offer academic coaching, entrance exam preparation, and skill-based training.</div>
+    
+        <div class="faq-item" onclick="toggleAnswer(1)">
+            <p>How can I enroll in a coaching class?</p> <span>+</span>
+        </div>
+        <div class="faq-answer">You can enroll by visiting our website, filling out the registration form, and making the necessary payment.</div>
+        
+        <div class="faq-item" onclick="toggleAnswer(2)">
+            <p>What are the batch timings?</p> <span>+</span>
+        </div>
+        <div class="faq-answer">Our batch timings are flexible and vary for different courses. Contact us for details.</div>
+    
+        <div class="faq-item" onclick="toggleAnswer(3)">
+            <p>Do you provide online coaching?</p> <span>+</span>
+        </div>
+        <div class="faq-answer">Yes, we offer online coaching via live and recorded sessions.</div>
+        
+        <div class="faq-item" onclick="toggleAnswer(4)">
+            <p>What are the fees for different courses?</p> <span>+</span>
+        </div>
+        <div class="faq-answer">Fees vary depending on the course. Visit our website or contact us for fee structures.</div>
+        
+        <div class="faq-item" onclick="toggleAnswer(5)">
+            <p>What are the admission requirements?</p> <span>+</span>
+        </div>
+        <div class="faq-answer">Requirements depend on the course. Generally, students need to submit academic records and complete the application process.</div>
+        
+        <div class="faq-item" onclick="toggleAnswer(6)">
+            <p>What facilities are available at the coaching center?</p> <span>+</span>
+        </div>
+        <div class="faq-answer">We provide well-equipped classrooms, study materials, online resources, and expert guidance.</div>
+    </div>
+    
+    <script>
+        function toggleAnswer(index) {
+            let faqItems = document.querySelectorAll(".faq-item");
+            let answers = document.querySelectorAll(".faq-answer");
+    
+            if (answers[index].style.display === "block") {
+                answers[index].style.display = "none";
+                faqItems[index].classList.remove("active");
+                faqItems[index].querySelector("span").textContent = "+";
+            } else {
+                // Close all other open answers
+                answers.forEach((answer, i) => {
+                    if (i !== index) answer.style.display = "none";
+                });
+    
+                faqItems.forEach((item, i) => {
+                    if (i !== index) {
+                        item.classList.remove("active");
+                        item.querySelector("span").textContent = "+";
+                    }
+                });
+    
+                // Open the selected one
+                answers[index].style.display = "block";
+                faqItems[index].classList.add("active");
+                faqItems[index].querySelector("span").textContent = "-";
+            }
+        }
+    </script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo-container">
+                <img src="image/logo.png" alt="Company Logo" class="footer-logo">
+            </div>
+    
+            <div class="footer-section">
+                <div class="footer-h2">Quick Links</div>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="index.html" class="footer-a">Home</a></li>
+                    <li class="footer-li"><a href="about.html" class="footer-a">About Us</a></li>
+                    <li class="footer-li"><a href="course.html" class="footer-a">Courses</a></li>
+                    <li class="footer-li"><a href="contact.html" class="footer-a">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <div class="footer-h2">Resources</div>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="blogs.html" class="footer-a">Blog</a></li>
+                    <li class="footer-li"><a href="faq.html" class="footer-a">FAQs</a></li>
+                    <li class="footer-li"><a href="privacy.html" class="footer-a">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <div class="footer-h2">Contact Us</div>
+                <p class="footer-p">Email: info@example.com</p>
+                <p class="footer-p">Phone: +123 456 7890</p>
+                <p class="footer-p">Address: 123 Street, City</p>
+            </div>
+    
+            <div class="footer-section">
+                <div class="footer-h2">Follow Us</div>
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-a"><img src="image/Facebook_f_logo.svg" alt="Facebook" class="footer-img"></a>
+                    <a href="#" class="footer-a"><img src="image/LinkedIn_logo_initials.png" alt="Twitter" class="footer-img"></a>
+                    <a href="#" class="footer-a"><img src="image/Instagram_icon.png" alt="Instagram" class="footer-img"></a>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            &copy; 2025 Your Company. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

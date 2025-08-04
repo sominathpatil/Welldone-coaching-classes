@@ -1,0 +1,84 @@
+
+.jee-course-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+    
+}
+.jee-course-image img {
+    width: 300px;
+    height: 170px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 66px 0px -35px 0px;
+}
+
+.jee-container {
+    width: 95%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+   
+}
+.jee-course-title {
+    text-align: center;
+    color: #333;
+    grid-column: span 2;
+}
+.jee-subject{
+   list-style-type: none;
+}
+
+.jee-section {
+    font-size: 15px;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #4CAF50;;
+}
+.enroll-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    grid-column: span 2;
+}
+.enroll-btn:hover {
+    background: #218838;
+}
+@media screen and (max-width: 768px) {
+    .jee-container {
+        grid-template-columns: 1fr;
+        width: 89%;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .jee-course-image,
+    .jee-course-title,
+    .enroll-btn {
+        grid-column: span 1;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .jee-section{
+        font-size: 10px;
+    }
+
+    .jee-course-image img {
+        width: 70%;
+        height: 70%;
+        margin: 50px 0 -37px 0;
+    }
+    .jee-subject{
+        margin-right: 35px;
+    }
+}
